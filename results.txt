@@ -1,0 +1,77 @@
+oleksijezov@MBP-Oleksij newrepo_test % ls
+GITFILE		README.md	file.txt
+oleksijezov@MBP-Oleksij newrepo_test % git status
+На гілці main
+Ваша гілка не відрізняється від "origin/main".
+
+нічого комітити, робоче дерево чисте
+
+___________________________________________
+
+oleksijezov@MBP-Oleksij newrepo_test % git branch
+* main
+  newbranch
+___________________________________________
+
+oleksijezov@MBP-Oleksij newrepo_test % git log
+commit 71eb057d3e6082a1bee8ed9734e8710e07d0dcf1 (HEAD -> main, origin/main, origin/HEAD)
+Author: alexphotoone-wq <alexphotoone@gmail.com>
+Date:   Sat Jan 31 13:27:23 2026 +0200
+
+    Add new file GITFILE with initial content
+
+commit 4a666c10455ad51cf2caa2e12c2d43706e4c9a78
+Merge: f2fef81 6622c16
+Author: alexphotoone-wq <alexphotoone@gmail.com>
+Date:   Sat Jan 31 13:25:14 2026 +0200
+
+    вирішив конфлікт
+
+commit f2fef814adcae2a29d30054a6b786bfb08059088
+Author: alexphotoone-wq <alexphotoone@gmail.com>
+Date:   Sat Jan 31 13:22:42 2026 +0200
+
+    вніс зміни в файл на гілці main
+
+commit 6622c161e6c004e1bf879cc645c4fa468a1f3b54 (origin/newbranch, newbranch)
+Author: alexphotoone-wq <alexphotoone@gmail.com>
+Date:   Sat Jan 31 13:18:56 2026 +0200
+
+    вніс треті зміни в файл
+
+commit a49618f0e4030f0da862b85d810b383046233668
+Author: alexphotoone-wq <alexphotoone@gmail.com>
+Date:   Sat Jan 31 13:18:14 2026 +0200
+
+    вніс другі зміни в файл
+
+commit a64ed9feb1ebf44e9a0f551ab6feb8c912ba2b53
+Author: alexphotoone-wq <alexphotoone@gmail.com>
+Date:   Sat Jan 31 13:17:06 2026 +0200
+
+    вніс зміни в файл
+
+commit 42541860d5a09b63b65dd3359b47a11eb51d551c
+Author: alexphotoone-wq <alexphotoone@gmail.com>
+Date:   Sat Jan 31 13:14:47 2026 +0200
+
+    створили новий текст файл
+
+commit d5a081804bcb62656046cf21fd0b12fc15f4918d
+Author: alexphotoone-wq <alexphotoone@gmail.com>
+Date:   Sat Jan 31 13:09:20 2026 +0200
+
+    Initial commit
+oleksijezov@MBP-Oleksij newrepo_test % 
+___________________________________________
+
+
+oleksijezov@MBP-Oleksij newrepo_test % git log --merges
+commit 4a666c10455ad51cf2caa2e12c2d43706e4c9a78
+Merge: f2fef81 6622c16
+Author: alexphotoone-wq <alexphotoone@gmail.com>
+Date:   Sat Jan 31 13:25:14 2026 +0200
+
+    вирішив конфлікт
+
+______________________________________________
